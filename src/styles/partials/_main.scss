@@ -20,6 +20,13 @@ main {
     & .wrapper {
         width: 60%;
         margin-left: 30px;
+        padding: 50px 0;
+    }
+    & h1 {
+        text-align: center;
+        text-transform: inherit;
+        margin-bottom: 50px;
+        color: $darkBlue;
     }
     // width: 65%;
 }
@@ -30,11 +37,24 @@ main {
 
 .main-hero {
     height: 80vh;
-    background-image: url("public/assets/kid-photograph.jpg");
-    // background-size: 37%;
-    // background-color: $lightYellow;
-    // background-repeat: no-repeat;
-    // background-position: 320px 100px;
+    background: url("../assets/kid-photograph.jpg");
+    background-size: 85%;
+    background-attachment: fixed;
+    & h1 {
+        color: $lightYellow;
+    }
+    & h3 {
+        width: 27%;
+        color: $mediumBlue;
+        font-family: "Open Sans";
+        margin-top: 10px;
+        text-transform: inherit;
+    }
+}
+
+.blue {
+    color: $lightBlue;
+    border-bottom: 1px solid $lightBlue;
 }
 
 .main-hero .wrapper {
@@ -45,21 +65,66 @@ main {
     
 }
 
+// BlockQuote 
+
+.quote {
+    width: 65%;
+    padding: 100px 0;
+    color: $mediumBlue;
+    text-align: center;
+    & p {
+        font-style: italic;
+    }
+}
+
+blockquote {
+    position: relative;
+    padding: 0 15px;
+}
+
+blockquote::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+blockquote::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+
 // Tag Line
 
 .tagline {
     width: 65%;
-    padding: 100px 25px;
+    padding: 100px 50px;
     text-align: center;
-    background-color: #fff;
+    background-color: white;
     color: $mediumBlue;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-family: "Bree Serif";
+    &--bottom {
+        background-color: $lightBlue;
+        color: $darkBlue;
+    }
+}
+
+.fa-hand-point-right {
+    color: $lightYellow;
+    font-size:4rem;
+    transform: rotate(-15deg)
 }
 
 .explainer {
     display: flex;
-    padding: 30px 0 40px 0;
+    padding: 0px 0 40px 0;
     &--text {
         width: 50%;
         height: 100%;
