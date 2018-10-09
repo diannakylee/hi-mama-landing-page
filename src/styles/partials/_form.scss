@@ -1,0 +1,45 @@
+.formBox {
+    width: 35%;
+    background: $mediumBlue;
+    height: 100vh;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0 20px;
+    z-index: 2;
+    font-weight: bold;
+    & h3 {
+        color: $lightYellow;
+    }
+}
+
+.formBox--section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+label {
+    margin-top: 10px;
+}
+
+// input[type=text] {
+//     margin-top: 10px;
+// }
+
+input[type=radio] {
+    padding-right: 5px;
+}
+
+.required {
+    color: $mediumRed;
+}
+
+input[type=submit] {
+    background-color: $lightYellow;
+    color: $mediumBlue;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}
